@@ -23,7 +23,8 @@ export function ReactCusdis(props: {
 
   React.useLayoutEffect(() => {
     // @ts-expect-error
-    const render = window.renderCusdis
+
+    const render = window?.renderCusdis
 
     if (render) {
       render(divRef.current)
