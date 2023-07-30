@@ -10,7 +10,7 @@ function ReactCusdis(props) {
     useScript_1.useScript(props.lang ? `${host}/js/widget/lang/${props.lang}.js` : '');
     React.useLayoutEffect(() => {
         // @ts-expect-error
-        const render = window.renderCusdis;
+        const render = window === null || window === void 0 ? void 0 : window.renderCusdis;
         if (render) {
             render(divRef.current);
         }
